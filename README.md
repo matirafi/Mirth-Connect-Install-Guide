@@ -15,7 +15,7 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 - Docker Engine
 
 ## Guía de implementación
-`línea de código`
+`docker-compose.yml`
 
 ```php
 <?php
