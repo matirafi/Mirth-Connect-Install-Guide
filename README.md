@@ -7,11 +7,11 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 
 ## Pre-requisitos de instalación.
 - Ordenador con los siguientes especificaciones:
-  -Hardware x86, los modelos actuales de Intel/AMD deberían soportarlo.
-  -RAM: 2GB mínimo para instalación simple de Mirth Connect, Recomendado 8GB mínimo con 3GB reservados para Mirth
-  -Almacenamiento: 10GB mínimo instalación simple, Recomendado 20GB.
-  -Sistema Operativo Ordenador: Windows 10
-  -Sistema Operativo Maquina Virtual: CentOS Linux 7.6.1810 (x86_64)
+  - Hardware x86, los modelos actuales de Intel/AMD deberían soportarlo.
+  - RAM: 2GB mínimo para instalación simple de Mirth Connect, Recomendado 8GB mínimo con 3GB reservados para Mirth
+  - Almacenamiento: 10GB mínimo instalación simple, Recomendado 20GB.
+  - Sistema Operativo Ordenador: Windows 10
+  - Sistema Operativo Maquina Virtual: CentOS Linux 7.6.1810 (x86_64)
 
 - Maquina Virtual con SO `CentOS Linux 7.6.1810 (x86_64)` 
 - Docker Engine
