@@ -11,7 +11,7 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
   - RAM: 8 GB mínimo
   - Almacenamiento: 30 GB mínimo dedicado
   - Sistema Operativo Ordenador: Windows 10
-- Maquina Virtual con SO `CentOS Linux 7.6.1810 (x86_64)` http://ftp.iij.ad.jp/pub/linux/centos-vault/7.6.1810/isos/x86_64/
+- Maquina Virtual con SO `CentOS Linux 7.6.1810 (x86_64)` http://ftp.iij.ad.jp/pub/linux/centos-vault/7.6.1810/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso
 - Docker Engine
 
 ## Guía de implementación
