@@ -15,3 +15,10 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 - Docker Engine
 
 ## Guía de implementación
+`línea de código`
+
+```php
+<?php
+  echo "fragmento largo de código";
+?>
+```
