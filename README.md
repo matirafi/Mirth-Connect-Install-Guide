@@ -17,8 +17,35 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 ## Guía de implementación
 `docker-compose.yml`
 
-```php
-<?php
-  echo "fragmento largo de código";
-?>
+```Javascript
+version: "3.1"
+services:
+  mc:
+    image: nextgenhealthcare/connect
+    
+environment:
+      - DATABASE=postgres
+      - DATABASE_URL=jdbc:postgresql://172.16.255.61:5433/mirthdb
+      - DATABASE_MAX_CONNECTIONS=20
+      - DATABASE_USERNAME=mirthdb
+      - DATABASE_PASSWORD=mirthdb
+      - DATABASE_MAX_RETRY=2
+      - DATABASE_RETRY_WAIT=10000
+      - KEYSTORE_STOREPASS=Mati.123
+      - KEYSTORE_KEYPASS=Mati.123
+      - VMOPTIONS=-Xmx512m
+    ports:
+      - 8180:8080/tcp
+      - 8443:8443/tcp
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=mirthdb
+      - POSTGRES_PASSWORD=mirthdb
+      - POSTGRES_DB=mirthdb
+    ports:
+      - 5433:5432
+
 ```
