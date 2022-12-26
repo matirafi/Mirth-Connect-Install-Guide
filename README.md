@@ -17,13 +17,12 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 ## Guía de implementación
 `docker-compose.yml`
 
-```Javascript
+```javascript
 version: "3.1"
 services:
   mc:
     image: nextgenhealthcare/connect
-    
-environment:
+    environment:
       - DATABASE=postgres
       - DATABASE_URL=jdbc:postgresql://172.16.255.61:5433/mirthdb
       - DATABASE_MAX_CONNECTIONS=20
@@ -47,5 +46,4 @@ environment:
       - POSTGRES_DB=mirthdb
     ports:
       - 5433:5432
-
 ```
