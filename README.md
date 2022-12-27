@@ -18,9 +18,13 @@ En orden para poder desplegar los servicios, se requiere de la instalación de [
 Se debe seleccionar nueva en la pestaña dentro de virtualbox para poder configurar la maquina virtual a crear con los siguientes parametros
 
 |**Nombre**| **CentOS 7.6** |
+--- | --- 
 | Tipo      | Linux |
+--- | --- 
 | Version      | RedHat(64-bit)     | 
+--- | --- 
 | Tamaño de memoria | 2048 MB      | 
+--- | --- 
 | Disco duro      | Crear un disco duro virtual ahora         |
 --- | --- 
 
