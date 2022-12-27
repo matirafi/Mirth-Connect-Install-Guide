@@ -26,7 +26,22 @@ Se debe seleccionar nueva en la pestaña dentro de virtualbox para poder configu
 | Tamaño de memoria | 2048 MB      | 
 | Disco duro      | Crear un disco duro virtual ahora         |
 
-Luego
+**Crear de disco duro virtual**
+|||
+--- | --- 
+|Tamaño del archivo| 20 GB |
+| Tipo de archivo     | VDI |
+| Almacenamiento   | Reservado dinámicamente    | 
+
+
+
+
+
+
+
+
+
+
 `docker-compose.yml`
 
 ```javascript
