@@ -14,7 +14,7 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 - Maquina Virtual con SO [`CentOS Linux 7.6.1810 (x86_64)`](http://ftp.iij.ad.jp/pub/linux/centos-vault/7.6.1810/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso) 
 
 ## Guía de implementación
-En orden para poder desplegar los servicios, se requiere de una maquina virtual ya sea en una instancia en la nube, o localmente en una aplicacion que permita crear maquinas virtuales desde el ordenador.
+En orden para poder desplegar los servicios, se requiere de la instalación de [`VirtualBox`](https://www.virtualbox.org/)
 
 
 `docker-compose.yml`
