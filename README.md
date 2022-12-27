@@ -41,7 +41,6 @@ La maquina virtual ya esta creada en VirtualBox, ahora se debe cargar la imagen 
 
 
 
-
 `docker-compose.yml`
 
 ```javascript
