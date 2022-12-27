@@ -45,6 +45,13 @@ Luego de haber cargado la imagen del SO CentOS 7.6 se procede a inicializar la m
 - Empezar Instalación
 
 
+Durante la instalacion, se debe configurar los siguientes ajustes de usuario
+
+- Crear clave de administrador root
+- Crear usuario y clave
+  - [x] Hacer que este usuario sea administrador
+
+
 
 
 
