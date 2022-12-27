@@ -41,7 +41,7 @@ Luego de haber cargado la imagen del SO CentOS 7.6 se procede a inicializar la m
 - Seleccion de Software
   - Entorno Base: `Instalacion mínima`
 - Destino de la Instalación
-  - Mantener el disco duro predeterminado ya seleccionado - click en el recuadro superior <samp>Listo</samp>
+  - Mantener el disco duro predeterminado ya seleccionado - haz click sobre el recuadro <samp>Listo</samp> en la parte superior.
 - Empezar Instalación
 
 
