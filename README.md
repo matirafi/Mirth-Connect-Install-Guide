@@ -50,6 +50,23 @@ Durante la instalacion, se debe configurar los siguientes ajustes de usuario
 - Crear clave de administrador root
 - Crear usuario y clave
   - [x] Hacer que este usuario sea administrador
+- Al finalizar la instalación, se debe reiniciar la maquina virtual y a continuación se deberá aceptar el acuerdo de licencia.
+
+Luego de finalizada la configuración de instalación de CentOS, se debe acceder al terminal de la máquina virtual y se deberan realizar las configuraciones de redes. Es decir, la configuración de la conexión a internet y el "Tunneling" o redirección de puertos.
+ 
+```linux
+# Para verificar si la maquina virtual está conectada a internet se debe utilizar el comando “nmcli” en el terminal
+nmcli
+# Si enp0s3: desconectado, se debe acceder al archivo ifcfg-enp0s3 y editarlo. El comando vi permite visualizar y editar archivos
+sudo vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+# Para poder entrar en modo edición del archivo se debe presionar la tecla ”i” 
+i
+# luego se debe identificar la variable ONBOOT, la cual debe ser editada ONBOOT:no a ONBOOT:yes, seguido presionar esc para salir del modo edición, presionar Shift+ tecla ”:” y escribir :wq, este comando guarda los cambios realizados y cierra el archivo visualizado.
+:wq
+sudo systemctl restart network.service
+nmcli
+# ahora enp0s3 debe mostrar “conectado to enp0s3” 
+```
 
 
 
