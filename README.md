@@ -55,6 +55,7 @@ Durante la instalacion, se debe configurar los siguientes ajustes de usuario
 Luego de finalizada la configuración de instalación de CentOS, se debe acceder al terminal de la máquina virtual y se deberan realizar las configuraciones de redes. Es decir, la configuración de la conexión a internet y el "Tunneling" o redirección de puertos.
  
 ```
+# CONEXION A INTERNET
 # Para verificar si la maquina virtual está conectada a internet se debe utilizar el comando “nmcli” en el terminal
 nmcli
 # Si enp0s3: desconectado, se debe acceder al archivo ifcfg-enp0s3 y editarlo. El comando vi permite visualizar y editar archivos
