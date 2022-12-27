@@ -39,14 +39,10 @@ Luego de haber cargado la imagen del SO CentOS 7.6 se procede a inicializar la m
 
 - Selección de idioma: `Español, Chile`
 - Seleccion de Software
-  - Base Environment: `Instalacion mínima`
-  - Additional software for Selected Environment:
-    - [x] Guest Agents
-- Network & Hostname
-  - Ethernet: `ON`
-- Installation Destination
-  - Leave the default hard drive selected — just click <samp>Done</samp> at the top.
-- Begin Installation
+  - Entorno Base: `Instalacion mínima`
+- Destino de la Instalación
+  - Mantener el disco duro predeterminado ya seleccionado - click en el recuadro superior <samp>Listo</samp>
+- Empezar Instalación
 
 
 
