@@ -15,6 +15,8 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 - Docker Engine
 
 ## Guía de implementación
+En orden para poder desplegar los servicios, se requiere de una maquina virtual ya sea en una instancia en la nube, o localmente en una aplicacion que permita crear maquinas virtuales desde el ordenador.
+
 
 `docker-compose.yml`
 
