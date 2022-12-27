@@ -16,12 +16,13 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 ## Guía de implementación
 En orden para poder desplegar los servicios, se requiere de la instalación de [VirtualBox](https://www.virtualbox.org/), el cual nos permitirá crear una maquina virtual localmente en tu ordenador. Se debe acceder al sitio oficial de VirtualBox y seguir las instrucciones de descarga y del instalador.
 Se debe seleccionar nueva en la pestaña dentro de virtualbox para poder configurar la maquina virtual a crear con los siguientes parametros
---- | --- 
+
 |**Nombre**| **CentOS 7.6** |
 | Tipo      | Linux |
 | Version      | RedHat(64-bit)     | 
 | Tamaño de memoria | 2048 MB      | 
 | Disco duro      | Crear un disco duro virtual ahora         |
+--- | --- 
 
 `docker-compose.yml`
 
