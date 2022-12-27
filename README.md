@@ -35,6 +35,8 @@ Se debe seleccionar nueva en la pestaña dentro de virtualbox para poder configu
 
 La maquina virtual ya esta creada en VirtualBox, ahora se debe cargar la imagen ISO CentOS 7.6 en la maquina virtual, se debe hacer click derecho sobre la maquina virtual creada >Configuraciones>Almacenamiento>Controlador:IDE>Vacío> se debe seleccionar el ícono de disco a la derecha de la ventana, luego click sobre "Seleccionar archivo de disco óptico virtual" y se debe cargar la imagen `CentOS-7-x84_64-DVD-1810.iso`
 
+Luego de haber cargado la imagen del SO CentOS 7.6 se procede a inicializar la maquina virtual, lo que derivará en el asistente de instalación de CentOS 
+
 
 
 
