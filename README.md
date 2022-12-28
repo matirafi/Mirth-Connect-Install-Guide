@@ -69,7 +69,8 @@ nmcli
 # ahora enp0s3 debe mostrar “conectado to enp0s3” 
 ```
 
-
+Luego se deberá configurar la redireccion de puertos o "Tunneling" en orden para poder acceder a los servicios de la maquina virtual.
+Esto se realiza en la sección Preferencias > Red > Redes NAT. debería aparecer un archivo "NatNetwork", si no es asi pincha sobre el icono "+" al costado del cuadro para crear una red NAT, al entrar al archivo nos dará la opcion abajo de "reenvio de puertos". Luego en la pestaña IPV4 se establecen las reglas de redireccion de puertos, se le puede dar nombre a la regla, protocolo, configurar la IP y puerto anfitrion (nuestra red) y luego la IP y puerto invitado (la red interna de la maquina virtual). 
 
 
 
