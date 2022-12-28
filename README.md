@@ -15,7 +15,7 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 
 ## Guía de implementación
 
-1. Instalación VirtualBox y configuracion inicial
+1 Instalación VirtualBox y configuracion inicial
 
 En orden para poder desplegar los servicios, se requiere de la instalación de [VirtualBox](https://www.virtualbox.org/), el cual nos permitirá crear una maquina virtual localmente en tu ordenador. Se debe acceder al sitio oficial de VirtualBox y seguir las instrucciones de descarga y del instalador.
 Se debe seleccionar nueva en la pestaña dentro de virtualbox para poder configurar la maquina virtual a crear con los siguientes parametros.
@@ -80,15 +80,15 @@ Esto se realiza en la sección Preferencias > Red > Redes NAT. debería aparecer
 Entonces, los puertos mostrados anteriormente son los necesarios donde fueron desplegados los servicios de Mirth, HAPI-FHIR, el cliente SSH, Portainer y bases de datos. El cambio que se debe hacer es en las direcciones IP anfitrion e IP invitado, donde tu IP anfitrion debe ser tu direccion IPV4 dada por tu conexión a internet (en las propiedades de tu conexion a internet debe aparecer direccion ipv4) y la IP invitado está dada por la maquina virtual (esta se consulta mediane el comando `ip a`)
 
 
-2. Instalacion del Cliente SSH: PuTTY
+2 Instalacion del Cliente SSH: PuTTY
 En orden para instalar PuTTY se debe descargar directamente desde la pagina web [putty.org](https://www.putty.org/) y se seguir las instrucciones del instalador. Este programa nos permitirá conectarnos directamente con la maquina virtual, deben poner en Hostname la direccion IPv4 de su conexion de internet y el puerto para acceso es el 23(configurado previamente en el paso redireccion de puertos).
 
 ![Aquí la descripción de la imagen por si no carga](https://github.com/matirafi/Mirth-SIMSADI/blob/main/github_images/putty.JPG)
 
 
+3 Instalación de Docker Engine
 
-
-
+Antes de continuar con la instalacion de Docker Engine es recomendable revisar la documentacion oficial respecto a la instalacion de [Docker Engine en CentOS](https://docs.docker.com/engine/install/centos/)
 
 
 
