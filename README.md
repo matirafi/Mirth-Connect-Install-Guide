@@ -14,6 +14,9 @@ Cabe destacar que este repositorio esta enfocado para el usuario final del módu
 - Maquina Virtual con SO [`CentOS Linux 7.6.1810 (x86_64)`](http://ftp.iij.ad.jp/pub/linux/centos-vault/7.6.1810/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso) 
 
 ## Guía de implementación
+
+1. Instalación VirtualBox y configuracion inicial
+
 En orden para poder desplegar los servicios, se requiere de la instalación de [VirtualBox](https://www.virtualbox.org/), el cual nos permitirá crear una maquina virtual localmente en tu ordenador. Se debe acceder al sitio oficial de VirtualBox y seguir las instrucciones de descarga y del instalador.
 Se debe seleccionar nueva en la pestaña dentro de virtualbox para poder configurar la maquina virtual a crear con los siguientes parametros.
 
@@ -53,7 +56,7 @@ Durante la instalacion, se debe configurar los siguientes ajustes de usuario
 - Al finalizar la instalación, se debe reiniciar la maquina virtual y a continuación se deberá aceptar el acuerdo de licencia.
 
 Luego de finalizada la configuración de instalación de CentOS, se debe acceder al terminal de la máquina virtual y se deberan realizar las configuraciones de redes. Es decir, la configuración de la conexión a internet y el "Tunneling" o redirección de puertos.
- 
+
 ```
 # CONEXION A INTERNET
 # Para verificar si la maquina virtual está conectada a internet se debe utilizar el comando “nmcli” en el terminal
@@ -77,7 +80,10 @@ Esto se realiza en la sección Preferencias > Red > Redes NAT. debería aparecer
 Entonces, los puertos mostrados anteriormente son los necesarios donde fueron desplegados los servicios de Mirth, HAPI-FHIR, el cliente SSH, Portainer y bases de datos. El cambio que se debe hacer es en las direcciones IP anfitrion e IP invitado, donde tu IP anfitrion debe ser tu direccion IPV4 dada por tu conexión a internet (en las propiedades de tu conexion a internet debe aparecer direccion ipv4) y la IP invitado está dada por la maquina virtual (esta se consulta mediane el comando `ip a`)
 
 
+2. Instalacion del Cliente SSH: PuTTY
+En orden para instalar PuTTY se debe descargar directamente desde la pagina web [putty.org](https://www.putty.org/) y se seguir las instrucciones del instalador. Este programa nos permitirá conectarnos directamente con la maquina virtual, deben poner en Hostname la direccion IPv4 de su conexion de internet y el puerto para acceso es el 23(configurado previamente en el paso redireccion de puertos).
 
+![Aquí la descripción de la imagen por si no carga](https://github.com/matirafi/Mirth-SIMSADI/blob/main/github_images/putty.JPG)
 
 
 
