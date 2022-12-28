@@ -70,7 +70,11 @@ nmcli
 ```
 
 Luego se deberá configurar la redireccion de puertos o "Tunneling" en orden para poder acceder a los servicios de la maquina virtual.
-Esto se realiza en la sección Preferencias > Red > Redes NAT. debería aparecer un archivo "NatNetwork", si no es asi pincha sobre el icono "+" al costado del cuadro para crear una red NAT, al entrar al archivo nos dará la opcion abajo de "reenvio de puertos". Luego en la pestaña IPV4 se establecen las reglas de redireccion de puertos, se le puede dar nombre a la regla, protocolo, configurar la IP y puerto anfitrion (nuestra red) y luego la IP y puerto invitado (la red interna de la maquina virtual). 
+Esto se realiza en la sección Preferencias > Red > Redes NAT. debería aparecer un archivo "NatNetwork", si no es asi pincha sobre el icono "+" al costado del cuadro para crear una red NAT, al entrar al archivo nos dará la opcion abajo de "reenvio de puertos". Luego en la pestaña IPV4 se configuran las reglas de redireccion de puertos, se le puede dar nombre a la regla seguido del protocolo de comunicación, configurar la IP y puerto anfitrion (nuestra red) y luego la IP y puerto invitado (la red interna de la maquina virtual), como se muestra a continuacion:
+
+Entonces, los puertos mostrados anteriormente son los necesarios donde fueron desplegados los servicios de Mirth, HAPI-FHIR, el cliente SSH, Portainer y bases de datos. El cambio que se debe hacer es en las direcciones IP anfitrion e IP invitado, donde tu IP anfitrion debe ser tu direccion IPV4 dada por tu conexión a internet(Propiedades de tu conexion a internet debe aparecer direccion ipv4) y la IP invitado está dado por la maquina virtual (esta se consulta mediane el comando ip a)
+
+
 
 
 
