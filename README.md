@@ -77,6 +77,7 @@ Entonces, los puertos mostrados anteriormente son los necesarios donde fueron de
 
 
 
+
 `docker-compose.yml`
 
 ```javascript
