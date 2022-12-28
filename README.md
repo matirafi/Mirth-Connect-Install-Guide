@@ -74,7 +74,23 @@ Esto se realiza en la sección Preferencias > Red > Redes NAT. debería aparecer
 
 ![Aquí la descripción de la imagen por si no carga](https://github.com/matirafi/Mirth-SIMSADI/blob/main/github_images/Captura.JPG)
 
-Entonces, los puertos mostrados anteriormente son los necesarios donde fueron desplegados los servicios de Mirth, HAPI-FHIR, el cliente SSH, Portainer y bases de datos. El cambio que se debe hacer es en las direcciones IP anfitrion e IP invitado, donde tu IP anfitrion debe ser tu direccion IPV4 dada por tu conexión a internet(Propiedades de tu conexion a internet debe aparecer direccion ipv4) y la IP invitado está dado por la maquina virtual (esta se consulta mediane el comando `ip a`) 
+Entonces, los puertos mostrados anteriormente son los necesarios donde fueron desplegados los servicios de Mirth, HAPI-FHIR, el cliente SSH, Portainer y bases de datos. El cambio que se debe hacer es en las direcciones IP anfitrion e IP invitado, donde tu IP anfitrion debe ser tu direccion IPV4 dada por tu conexión a internet (en las propiedades de tu conexion a internet debe aparecer direccion ipv4) y la IP invitado está dada por la maquina virtual (esta se consulta mediane el comando `ip a`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
