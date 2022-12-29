@@ -80,13 +80,13 @@ Esto se realiza en la sección Preferencias > Red > Redes NAT. debería aparecer
 Entonces, los puertos mostrados anteriormente son los necesarios donde fueron desplegados los servicios de Mirth, HAPI-FHIR, el cliente SSH, Portainer y bases de datos. El cambio que se debe hacer es en las direcciones IP anfitrion e IP invitado, donde tu IP anfitrion debe ser tu direccion IPV4 dada por tu conexión a internet (en las propiedades de tu conexion a internet debe aparecer direccion ipv4) y la IP invitado está dada por la maquina virtual (esta se consulta mediane el comando `ip a`)
 
 
-2 Instalacion del Cliente SSH: PuTTY
+2 Instalacion del Cliente SSH: PuTTY.
 En orden para instalar PuTTY se debe descargar directamente desde la pagina web [putty.org](https://www.putty.org/) y se seguir las instrucciones del instalador. Este programa nos permitirá conectarnos directamente con la maquina virtual, deben poner en Hostname la direccion IPv4 de su conexion de internet y el puerto para acceso es el 23(configurado previamente en el paso redireccion de puertos).
 
 ![Aquí la descripción de la imagen por si no carga](https://github.com/matirafi/Mirth-SIMSADI/blob/main/github_images/putty.JPG)
 
 
-3 Instalación de Docker Engine
+3 Instalación de Docker Engine.
 
 Antes de comenzar con la instalacion de Docker Engine es recomendable revisar la documentacion oficial respecto a la instalacion de [Docker Engine en CentOS](https://docs.docker.com/engine/install/centos/). Luego debes revisar como pre-requisito del SO si el repositorio de `centos-extras` se encuentra habilitado correctamente, se recomienda ocupar el controlador de almacenamiento `overlay2` y verificar que no existan versiones anteriores de docker instaladas, si estuviesen instaladas debes desinstalaras.
 
@@ -124,12 +124,18 @@ sudo systemctl start docker
 # para detener docker
 sudo systemctl stop docker
 ```
+Como ultimo paso adicional, para poder gestionar los contenedores de forma comoda utilizamos un software llamado Portainer, el cual se instala como un contenedor Docker de la siguiente forma.
+
+```centos
+docker run -d -p 8080:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
 
 
+4 Instalación Mirth Connect.
 
 `docker-compose.yml`
 
-```javascript
+```Java
 version: "3.1"
 services:
   mc:
