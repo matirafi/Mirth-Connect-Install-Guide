@@ -88,17 +88,42 @@ En orden para instalar PuTTY se debe descargar directamente desde la pagina web 
 
 3 Instalación de Docker Engine
 
-Antes de continuar con la instalacion de Docker Engine es recomendable revisar la documentacion oficial respecto a la instalacion de [Docker Engine en CentOS](https://docs.docker.com/engine/install/centos/)
+Antes de comenzar con la instalacion de Docker Engine es recomendable revisar la documentacion oficial respecto a la instalacion de [Docker Engine en CentOS](https://docs.docker.com/engine/install/centos/). Luego debes revisar como pre-requisito del SO si el repositorio de `centos-extras` se encuentra habilitado correctamente, se recomienda ocupar el controlador de almacenamiento `overlay2` y verificar que no existan versiones anteriores de docker instaladas, si estuviesen instaladas debes desinstalaras.
 
-
-
-
-
-
-
-
-
-
+```linux
+sudo yum remove docker \
+                docker-client \
+                docker-client-latest \
+                docker-common \
+                docker-latest \
+                docker-latest-logrotate \
+                docker-logrotate \
+                docker-engine
+```
+Para no tener problemas de actualizaciones respecto a los paquetes de CentOS, es recomendable actualizarlos antes de comenzar la instalacion de docker
+```linux
+sudo yum update
+```
+El metodo de instalacion a ocupar es mediante el repositorio de docker, el cual debe ser configurado como primera instancia. Se debe instalar el paquete `yum-utils` y luego la configuración.
+```linux
+sudo yum install -y yum-utils
+sudo yum-config-manager \
+  --add-repo \
+  https://download.docker.com/linux/centos/docker-ce.repo
+```
+Luego se instala la *ultima* version de Docker Engine, containerd y Docker Compose.
+```centos
+sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+Ahora docker se encuentra instalado correctamente, pero no está iniciado.
+```centos
+# para verificar el estado de docker
+sudo systemctl status docker
+# para iniciar docker
+sudo systemctl start docker
+# para detener docker
+sudo systemctl stop docker
+```
 
 
 
@@ -117,8 +142,8 @@ services:
       - DATABASE_PASSWORD=mirthdb
       - DATABASE_MAX_RETRY=2
       - DATABASE_RETRY_WAIT=10000
-      - KEYSTORE_STOREPASS=Mati.123
-      - KEYSTORE_KEYPASS=Mati.123
+      - KEYSTORE_STOREPASS=Biomedica.123
+      - KEYSTORE_KEYPASS=Biomedica.123
       - VMOPTIONS=-Xmx512m
     ports:
       - 8180:8080/tcp
